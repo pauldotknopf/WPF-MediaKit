@@ -1,0 +1,3 @@
+[submodule "SubModules/DirectShow.NET"]
+	path = SubModules/DirectShow.NET
+	url = https://github.com/theonlylawislove/DirectShow.NET.git

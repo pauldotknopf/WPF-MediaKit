@@ -67,10 +67,6 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DirectShowLib-2005, Version=2.0.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WPFMediaKit\Assemblies\DirectShowLib-2005.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationFramework.Aero" />
     <Reference Include="ShaderEffectLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -202,6 +198,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SubModules\DirectShow.NET\src\DirectShowLib-2012.csproj">
+      <Project>{ce009bfa-5ef6-4153-b2a1-2fa79698a9ae}</Project>
+      <Name>DirectShowLib-2012</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WPFMediaKit\WPFMediaKit.csproj">
       <Project>{6030628D-EE93-4D61-B6BE-8B6AE99F3935}</Project>
       <Name>WPFMediaKit</Name>

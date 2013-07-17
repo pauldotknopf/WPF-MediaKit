@@ -9,25 +9,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EVRPresenter", "EVRPresente
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EVRPresenterCommon - Do Not Build", "EVRPresenter\Common\Common.vcxproj", "{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectShowLib-2012", "SubModules\DirectShow.NET\src\DirectShowLib-2012.csproj", "{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = SampleApplication\\SampleApplication.csproj
-		SccProjectName1 = SampleApplication
-		SccLocalPath1 = SampleApplication
-		SccProjectUniqueName2 = WPFMediaKit\\WPFMediaKit.csproj
-		SccProjectName2 = WPFMediaKit
-		SccLocalPath2 = WPFMediaKit
-		SccProjectUniqueName3 = EVRPresenter\\EVRPresenter.vcxproj
-		SccProjectName3 = EVRPresenter
-		SccLocalPath3 = EVRPresenter
-		SccProjectUniqueName4 = EVRPresenter\\Common\\Common.vcxproj
-		SccProjectName4 = EVRPresenter/Common
-		SccLocalPath4 = EVRPresenter\\Common
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -92,6 +76,18 @@ Global
 		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Release|Mixed Platforms.ActiveCfg = Release|Win32
 		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Release|Win32.ActiveCfg = Release|Win32
 		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Release|x64.ActiveCfg = Release|Win32
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Win32.ActiveCfg = Release|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
