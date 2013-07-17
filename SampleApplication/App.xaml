@@ -1,0 +1,13 @@
+﻿<Application
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:WPFMediaKit_DirectShow_Controls="clr-namespace:WPFMediaKit.DirectShow.Controls;assembly=WPFMediaKit" x:Class="SampleApplication.App"
+             StartupUri="MediaUriPlayerWindow.xaml">
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="Resources/MediaPlayerStyles.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

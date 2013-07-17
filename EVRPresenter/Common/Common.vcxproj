@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>EVRPresenterCommon - Do Not Build</ProjectName>
+    <ProjectGuid>{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}</ProjectGuid>
+    <RootNamespace>Common</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="WinUI\BaseWindow.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\Button.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\ComboBox.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\Dialog.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\listbox.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\listview.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\Slider.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\toolbar.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+    <ClCompile Include="WinUI\wincontrol.cpp">
+      <FileType>Text</FileType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AsyncCB.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\BaseWindow.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="BufferLock.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\Button.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="ClassFactory.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\ComboBox.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="critsec.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\dialog.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="GrowArray.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="linklist.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\listbox.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\listview.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="logging.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="mediatype.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="mfutils.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="PropVar.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="registry.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\Slider.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="smartptr.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="TinyMap.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\toolbar.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="trace.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\trackbar.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+    <ClInclude Include="WinUI\wincontrol.h">
+      <FileType>Text</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

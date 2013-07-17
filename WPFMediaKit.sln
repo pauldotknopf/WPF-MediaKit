@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFMediaKit", "WPFMediaKit\WPFMediaKit.csproj", "{6030628D-EE93-4D61-B6BE-8B6AE99F3935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApplication", "SampleApplication\SampleApplication.csproj", "{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EVRPresenter", "EVRPresenter\EVRPresenter.vcxproj", "{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EVRPresenterCommon - Do Not Build", "EVRPresenter\Common\Common.vcxproj", "{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs08
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SampleApplication\\SampleApplication.csproj
+		SccProjectName1 = SampleApplication
+		SccLocalPath1 = SampleApplication
+		SccProjectUniqueName2 = WPFMediaKit\\WPFMediaKit.csproj
+		SccProjectName2 = WPFMediaKit
+		SccLocalPath2 = WPFMediaKit
+		SccProjectUniqueName3 = EVRPresenter\\EVRPresenter.vcxproj
+		SccProjectName3 = EVRPresenter
+		SccLocalPath3 = EVRPresenter
+		SccProjectUniqueName4 = EVRPresenter\\Common\\Common.vcxproj
+		SccProjectName4 = EVRPresenter/Common
+		SccLocalPath4 = EVRPresenter\\Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|Win32.Build.0 = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Debug|x64.Build.0 = Debug|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|Win32.ActiveCfg = Release|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|Win32.Build.0 = Release|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|x64.ActiveCfg = Release|Any CPU
+		{6030628D-EE93-4D61-B6BE-8B6AE99F3935}.Release|x64.Build.0 = Release|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|Win32.Build.0 = Debug|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Debug|x64.Build.0 = Debug|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|Win32.ActiveCfg = Release|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|Win32.Build.0 = Release|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|x64.ActiveCfg = Release|Any CPU
+		{0FBBCF6E-EDA2-4E1F-B84C-7F448F22724E}.Release|x64.Build.0 = Release|Any CPU
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Debug|Any CPU.Build.0 = Debug|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Debug|Win32.Build.0 = Debug|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Debug|x64.ActiveCfg = Debug|x64
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Debug|x64.Build.0 = Debug|x64
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Release|Any CPU.ActiveCfg = Release|x64
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Release|Win32.ActiveCfg = Release|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Release|Win32.Build.0 = Release|Win32
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Release|x64.ActiveCfg = Release|x64
+		{93795BD8-0E1B-4D6C-B5F4-B49533E8C7E8}.Release|x64.Build.0 = Release|x64
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Debug|Win32.ActiveCfg = Debug|Win32
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Debug|x64.ActiveCfg = Debug|Win32
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Release|Any CPU.ActiveCfg = Release|Win32
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Release|Win32.ActiveCfg = Release|Win32
+		{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

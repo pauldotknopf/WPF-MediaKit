@@ -1,0 +1,242 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:DirectShowControls="clr-namespace:WPFMediaKit.DirectShow.Controls;assembly=WPFMediaKit"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:SampleApplication.Controls"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2009/interactivity"
+        xmlns:ShaderEffectLibrary="clr-namespace:ShaderEffectLibrary;assembly=ShaderEffectLibrary"
+        xmlns:Interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        x:Class="SampleApplication.MediaUriPlayerWindow"
+        Title="WPF MediaKit"
+        Height="416"
+        Width="820"
+        Background="#00000000"
+        WindowStyle="None"
+        AllowsTransparency="False"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\MediaPlayerStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Controls:FileDialog x:Name="fileDialog" />
+        <Grid x:Name="grid"
+              Background="{x:Null}">
+            <Border HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Width="Auto"
+                    Height="Auto"
+                    Background="#FF000000">
+                <Border.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                                         StartPoint="0.5,0">
+                        <GradientStop Color="#FF000000"
+                                      Offset="1" />
+                        <GradientStop Color="#FFBFBFBF"
+                                      Offset="0" />
+                        <GradientStop Color="#FF5F5F5F"
+                                      Offset="0.047" />
+                        <GradientStop Color="#FE5F5F5F"
+                                      Offset="0.922" />
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+            </Border>
+            <Border x:Name="mediaPlayerContainer"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Width="Auto"
+                    Height="Auto">
+                <DirectShowControls:MediaUriElement x:Name="mediaPlayer"
+                                                    Volume="1"
+                                                    Source="{Binding ElementName=fileDialog, Path=FilePath}"
+                                                    Stretch="Uniform"
+                                                    VideoRenderer="VideoMixingRenderer9"
+                                                    LoadedBehavior="Play"
+                                                    SpeedRatio="0.5"
+                                                    Loop="True"/>
+            </Border>
+            <Grid Margin="0,0,0,0"
+                  VerticalAlignment="Bottom"
+                  Height="80"
+                  Background="{x:Null}">
+                <Border MaxWidth="600"
+                        MinWidth="0"
+                        VerticalAlignment="Top"
+                        Width="400"
+                        CornerRadius="4,4,4,4"
+                        Background="#B2000000"
+                        Margin="202,5,202,0">
+                    <Border BorderThickness="1,1,1,1"
+                            CornerRadius="4,4,4,4"
+                            Background="{DynamicResource Glassage}"
+                            Height="12">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1"
+                                                 StartPoint="0.5,0">
+                                <GradientStop Color="#B6393939"
+                                              Offset="0" />
+                                <GradientStop Color="#FF979797"
+                                              Offset="1" />
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Slider Style="{DynamicResource MediaTimeSliderStyle}"
+                                Value="{Binding Path=MediaPosition, ElementName=mediaPlayer}"
+                                Maximum="{Binding Path=MediaDuration, ElementName=mediaPlayer}"
+                                Height="10" />
+                    </Border>
+                </Border>
+                <Viewbox HorizontalAlignment="Center"
+                         Margin="0,21,0,8"
+                         Stretch="Uniform">
+                    <Canvas Width="219"
+                            Height="41">
+                        <Canvas.Effect>
+                            <DropShadowEffect ShadowDepth="4"
+                                              BlurRadius="12"
+                                              Direction="295" />
+                        </Canvas.Effect>
+                        <Path Stretch="Fill"
+                              StrokeLineJoin="Round"
+                              StrokeThickness="1.2"
+                              Width="218"
+                              Height="40.678"
+                              Canvas.Top="-1.095"
+                              Data="M109.24504,0.5 C114.03861,0.49999881 118.43511,2.2003291 121.86445,5.0306299 L122.51595,5.5949948 205.5,5.5949948 C212.12742,5.5949938 217.5,10.967577 217.5,17.594993 L217.5,22.594993 C217.5,29.222412 212.12742,34.594995 205.5,34.594995 L123.03446,34.594995 122.5843,35.024179 C119.06116,38.226331 114.38101,40.177999 109.24504,40.177999 104.10908,40.177999 99.428704,38.226331 95.905301,35.024179 L95.455114,34.594995 12.5,34.594995 C5.8725815,34.594995 0.5,29.222412 0.5,22.594993 L0.5,17.594993 C0.5,10.967577 5.8725815,5.5949938 12.5,5.5949948 L95.973664,5.5949948 96.6252,5.0306299 C100.05478,2.2003291 104.45148,0.49999881 109.24504,0.5 z"
+                              Opacity="1"
+                              Stroke="{x:Null}">
+                            <Path.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1"
+                                                     StartPoint="0.5,0"
+                                                     MappingMode="RelativeToBoundingBox">
+                                    <GradientStop Color="#8A000000"
+                                                  Offset="0" />
+                                    <GradientStop Color="#8A000000"
+                                                  Offset="1" />
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                        <Path Stretch="Fill"
+                              StrokeLineJoin="Round"
+                              StrokeThickness="1.2"
+                              Width="218"
+                              Height="40.678"
+                              Canvas.Top="-1.095"
+                              Data="M109.24504,0.5 C114.03861,0.49999881 118.43511,2.2003291 121.86445,5.0306299 L122.51595,5.5949948 205.5,5.5949948 C212.12742,5.5949938 217.5,10.967577 217.5,17.594993 L217.5,22.594993 C217.5,29.222412 212.12742,34.594995 205.5,34.594995 L123.03446,34.594995 122.5843,35.024179 C119.06116,38.226331 114.38101,40.177999 109.24504,40.177999 104.10908,40.177999 99.428704,38.226331 95.905301,35.024179 L95.455114,34.594995 12.5,34.594995 C5.8725815,34.594995 0.5,29.222412 0.5,22.594993 L0.5,17.594993 C0.5,10.967577 5.8725815,5.5949938 12.5,5.5949948 L95.973664,5.5949948 96.6252,5.0306299 C100.05478,2.2003291 104.45148,0.49999881 109.24504,0.5 z"
+                              Opacity="1"
+                              Fill="{DynamicResource Glassage}">
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="0.5,1"
+                                                     StartPoint="0.5,0">
+                                    <GradientStop Color="#FF000000"
+                                                  Offset="1" />
+                                    <GradientStop Color="#FFC1C1C1"
+                                                  Offset="0" />
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <Canvas HorizontalAlignment="Center"
+                                Margin="0,0,0,0"
+                                VerticalAlignment="Center"
+                                Width="132"
+                                Height="40"
+                                Canvas.Left="43.833"
+                                Canvas.Top="-0.084">
+                            <Button Style="{DynamicResource PreviousButton}"
+                                    Content="Button"
+                                    Canvas.Left="0"
+                                    Canvas.Top="8" />
+                            <Button Content="Button"
+                                    Style="{DynamicResource NextButtonStyle}"
+                                    Canvas.Left="83"
+                                    Canvas.Top="8" />
+                            <ToggleButton Style="{DynamicResource MediaPlayPauseToggleStyle}"
+                                          Width="36.626"
+                                          Height="38.666"
+                                          Content="ToggleButton"
+                                          Canvas.Left="46.738"
+                                          Canvas.Top="2"
+                                          Command="DirectShowControls:MediaElementBase.TogglePlayPauseCommand"
+                                          CommandTarget="{Binding ElementName=mediaPlayer}"
+                                          IsChecked="{Binding Path=IsPlaying, ElementName=mediaPlayer, Mode=OneWay}" />
+                        </Canvas>
+                        <Button Content="Button"
+                                Canvas.Top="8"
+                                Canvas.Left="11"
+                                Style="{DynamicResource StopMediaButton}"
+                                Width="25"
+                                Height="23" />
+                        <Slider Canvas.Top="14.842"
+                                Canvas.Left="179.833"
+                                Width="34.167"
+                                Style="{DynamicResource AudioSliderStyle}"
+                                Minimum="0"
+                                LargeChange="0.1"
+                                Maximum="1"
+                                Value="{Binding Path=Volume, ElementName=mediaPlayer}" />
+                        <Button Content="Open ^"
+                                Canvas.Left="4.833"
+                                Style="{DynamicResource TextMediaButton}"
+                                Width="36"
+                                Height="12"
+                                Foreground="White"
+                                FontSize="6.667"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                FontWeight="Bold"
+                                Padding="0"
+                                Command="Controls:FileDialog.SelectFileCommand"
+                                CommandTarget="{Binding ElementName=fileDialog}"
+                                Canvas.Top="34" />
+                    </Canvas>
+                </Viewbox>
+            </Grid>
+        </Grid>
+        <Border ClipToBounds="False"
+                Margin="41,199,39,97"
+                x:Name="glassContainer"
+                Background="#00000000"
+                Height="100">
+            <Grid Margin="0,0,0,0">
+                <Rectangle Stroke="{x:Null}"
+                           RadiusX="5"
+                           RadiusY="5"
+                           HorizontalAlignment="Stretch"
+                           Width="Auto"
+                           StrokeThickness="2"
+                           RenderOptions.BitmapScalingMode="LowQuality"
+                           Fill="#FF202020">
+                    <Interactivity:Interaction.Behaviors>
+                        <Controls:GlassBehavior Visual="{Binding ElementName=mediaPlayerContainer, Mode=OneWay}">
+                            <Controls:GlassBehavior.Effect>
+                                <BlurEffect Radius="16" />
+                            </Controls:GlassBehavior.Effect>
+                        </Controls:GlassBehavior>
+                    </Interactivity:Interaction.Behaviors>
+                </Rectangle>
+                <Rectangle Fill="{DynamicResource Glassage}"
+                           RadiusX="5"
+                           RadiusY="5"
+                           HorizontalAlignment="Stretch"
+                           Margin="0,0,0,0"
+                           Width="Auto"
+                           Opacity="0.7"
+                           StrokeThickness="1">
+                    <Rectangle.Stroke>
+                        <LinearGradientBrush EndPoint="0.5,1"
+                                             StartPoint="0.5,0">
+                            <GradientStop Color="#FF2C2C2C"
+                                          Offset="1" />
+                            <GradientStop Color="#FF7C7C7C"
+                                          Offset="0" />
+                        </LinearGradientBrush>
+                    </Rectangle.Stroke>
+                </Rectangle>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="SampleApplication.TestMultipleVideosChangingReuseMediaUriElement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TestMultipleVideosChangingReuseMediaUriElement"
+        Height="600"
+        Width="800"
+        Loaded="Window_Loaded">
+    <WrapPanel x:Name="panel" />
+</Window>
