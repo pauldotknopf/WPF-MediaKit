@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EVRPresenterCommon - Do Not
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectShowLib-2012", "SubModules\DirectShow.NET\src\DirectShowLib-2012.csproj", "{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectShow", "DirectShow\DirectShow.csproj", "{53D9F07B-929E-40D8-A626-60B5AC39EC68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,18 @@ Global
 		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Win32.ActiveCfg = Release|Any CPU
 		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|x64.ActiveCfg = Release|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Release|Win32.ActiveCfg = Release|Any CPU
+		{53D9F07B-929E-40D8-A626-60B5AC39EC68}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

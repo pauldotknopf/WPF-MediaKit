@@ -55,7 +55,7 @@
                                                     Volume="1"
                                                     Source="{Binding ElementName=fileDialog, Path=FilePath}"
                                                     Stretch="Uniform"
-                                                    VideoRenderer="VideoMixingRenderer9"
+                                                    VideoRenderer="EnhancedVideoRenderer"
                                                     LoadedBehavior="Play"
                                                     SpeedRatio="0.5"
                                                     Loop="True"/>
